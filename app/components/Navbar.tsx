@@ -29,9 +29,6 @@ export default function Navbar() {
             <Link href="/projects" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
               Projects
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
-              Contact
-            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -74,13 +71,7 @@ export default function Navbar() {
             >
               Projects
             </Link>
-            <Link
-              href="/contact"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
-            </Link>
+
           </div>
         )}
       </div>

@@ -5,7 +5,6 @@ interface ProjectCardProps {
   description: string
   techStack: string[]
   imgSrc?: string | StaticImageData
-  githubLink?: string
   liveLink?: string
 }
 
@@ -14,7 +13,6 @@ export default function ProjectCard({
   description,
   techStack,
   imgSrc,
-  githubLink,
   liveLink,
 }: ProjectCardProps) {
   return (
@@ -49,16 +47,6 @@ export default function ProjectCard({
 
         {/* Links */}
         <div className="flex gap-3">
-          {githubLink && (
-            <a
-              href={githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded hover:border-gray-400 hover:bg-gray-50 font-medium transition-colors text-center text-sm"
-            >
-              GitHub
-            </a>
-          )}
           {liveLink && (
             <a
               href={liveLink}
@@ -66,7 +54,7 @@ export default function ProjectCard({
               rel="noopener noreferrer"
               className="flex-1 px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-800 font-medium transition-colors text-center text-sm"
             >
-              Live Demo
+              Link
             </a>
           )}
         </div>

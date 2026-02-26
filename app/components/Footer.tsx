@@ -34,13 +34,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="www.linkedin.com/in/phillip-vu-48520b352" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/phillip-vu-48520b352" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                   LinkedIn
                 </a>
               </li>
               <li>
                 <a href="mailto:phillipvu3635@gmail.com" className="hover:text-white transition-colors">
-                  Email
+                  Email: phillipvu3635@gmail.com
                 </a>
               </li>
             </ul>

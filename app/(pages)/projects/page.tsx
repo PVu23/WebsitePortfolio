@@ -1,25 +1,24 @@
 
 import ProjectCard from '../../components/ProjectCard'
-import projectImg from '../../media/IMG_6958.jpeg'
+import NGFPicture from '../../media/NextGenerationFocus.png'
+import HVMATLPicture from '../../media/HVMATLPicture.jpg'
 
 const projects = [
   {
     id: 1,
     title: 'Staff Dashboard',
-    description: 'A comprehensive staff management dashboard for Next Generation Focus.',
+    description: 'Redesigned the staff dashboard and added ability to upload, store, and download files using MongoDB',
     techStack: ['React.js', 'MongoDB', 'Jira', 'JavaScript', 'git', 'GitHub'],
-    githubLink: 'https://github.com',
-    liveLink: 'https://example.com',
-    imgSrc: projectImg,
+    liveLink: 'https://nextgenerationfocus.org/',
+    imgSrc: NGFPicture,
   },
   {
     id: 2,
     title: 'Church Web Application',
-    description: 'Internal web application for church operations and management.',
-    techStack: ['AWS', 'MongoDB', 'JavaScript', 'Express'],
-    githubLink: 'https://github.com',
-    liveLink: 'https://example.com',
-    imgSrc: projectImg,
+    description: 'Church web application for the Holy Vietnamese Martyrs Catholic Church in Atlanta. Shows upcoming events, mass times, people involved, and backstory on the founding of the church.',
+    techStack: ['AWS', 'MongoDB', 'JavaScript', 'git', 'GitHub'],
+    liveLink: 'https://www.hvmatl.org/',
+    imgSrc: HVMATLPicture,
   } 
 ]
 
@@ -48,7 +47,6 @@ export default function ProjectsPage() {
                   title={project.title}
                   description={project.description}
                   techStack={project.techStack}
-                  githubLink={project.githubLink}
                   liveLink={project.liveLink}
                   imgSrc={project.imgSrc}
                 />

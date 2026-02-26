@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import headshot from '../../media/IMG_6958.jpeg'
+import headshot from '../../media/LinkedInPhoto.jpg'
 
 export default function AboutPage() {
   const traits = ['Problem Solver', 'Creative Thinker', 'Studious', 'Communicative', 'Great Listener']
@@ -66,46 +66,8 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Experience Section */}
-          <div className="mb-16 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Experience</h2>
-
-            <div className="space-y-8">
-
-              {/* Experience 1 - Flesh this out a bit more */}
-              <div className="border-l-4 border-gray-900 pl-6 pb-8">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Web Development Volunteer
-                </h3>
-                <p className="text-sm text-gray-500 mb-4">Local Church • Ongoing</p>
-                <ul className="space-y-2 text-gray-600 text-sm">
-                  <li>• Maintain and improve internal web applications</li>
-                  <li>• Work with AWS and MongoDB to manage data</li>
-                  <li>• Collaborate with team members to ship features</li>
-                  <li>• Support church operations through technical solutions</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Education Section */}
-          <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Education</h2>
-
-            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Bachelor of Science in Information Technology
-              </h3>
-              <p className="text-gray-600 font-medium mb-2">Georgia Gwinnett College</p>
-              <p className="text-sm text-gray-500 mb-4">Expected Graduation: May 2026</p>
-              <p className="text-gray-600">
-                <span className="font-medium">Concentration:</span> Software Development
-              </p>
-            </div>
-          </div>
-
           {/* Resume Section */}
-          <div className="mt-12 animate-fade-in-up" style={{ animationDelay: '0.45s' }}>
+          <div className="mt-12 mb-16 animate-fade-in-up" style={{ animationDelay: '0.45s' }}>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Resume</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
@@ -141,6 +103,46 @@ export default function AboutPage() {
                   <p>If the preview doesn't render in your browser, the download button will open the PDF in a new tab.</p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Experience Section */}
+          <div className="mb-16 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Experience</h2>
+
+            <div className="space-y-8">
+
+              {/* Experience 1 - Flesh this out a bit more */}
+              <div className="border-l-4 border-gray-900 pl-6 pb-8">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  Web Development Volunteer
+                </h3>
+                <p className="text-sm text-gray-500 mb-4">Local Church • Ongoing</p>
+                <ul className="space-y-2 text-gray-600 text-sm">
+                  <li>• Maintain and improve internal web applications</li>
+                  <li>• Work with AWS and MongoDB to manage data</li>
+                  <li>• Collaborate with team members to ship features</li>
+                  <li>• Support church operations through technical solutions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          
+
+          {/* Education Section */}
+          <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Education</h2>
+
+            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Bachelor of Science in Information Technology
+              </h3>
+              <p className="text-gray-600 font-medium mb-2">Georgia Gwinnett College</p>
+              <p className="text-sm text-gray-500 mb-4">Expected Graduation: May 2026</p>
+              <p className="text-gray-600">
+                <span className="font-medium">Concentration:</span> Software Development
+              </p>
             </div>
           </div>
         </div>
