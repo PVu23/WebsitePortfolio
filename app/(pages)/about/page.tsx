@@ -1,8 +1,7 @@
 import Image from 'next/image'
-import headshot from '../../media/LinkedInPhoto.jpg'
 
 export default function AboutPage() {
-  const traits = ['Problem Solver', 'Creative Thinker', 'Studious', 'Communicative', 'Great Listener']
+  const traits = ['Problem Solver', 'Creative Thinker', 'Studious', 'Communicative', 'Leader']
 
   return (
     <div>
@@ -29,7 +28,7 @@ export default function AboutPage() {
             <div className="flex items-center justify-center animate-fade-in-up">
               <div className="w-64 h-64 bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl flex items-center justify-center">
                 <Image
-                  src={headshot}
+                  src="/LinkedInPhoto.jpg"
                   alt="Professional Headshot"
                   className="rounded-2xl"
                   width={256}
@@ -113,7 +112,7 @@ export default function AboutPage() {
             <div className="space-y-8">
 
               {/* Experience 1 - Flesh this out a bit more */}
-              <div className="border-l-4 border-gray-900 pl-6 pb-8">
+              <div className="bg-gray-100 border-l-4 border-gray-900 p-6 rounded-lg mb-4">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Web Development Volunteer
                 </h3>
@@ -134,7 +133,7 @@ export default function AboutPage() {
           <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Education</h2>
 
-            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200">
+            <div className="p-2 rounded-lg">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Bachelor of Science in Information Technology
               </h3>

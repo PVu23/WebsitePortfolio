@@ -24,25 +24,37 @@ A modern, minimalist portfolio website for a full-stack developer. Built with Ne
 - **Package Manager**: npm
 
 ## Project Structure
+# Phillip Lam Vu — Portfolio Website
+
+
+## Features
+
+- Responsive, mobile-first layout
+- Minimalist aesthetic with subtle animations
+- Pages: Home, About, Projects
+- Resume preview and download 
+
+## Tech Stack
+
+- Frontend: React 18, Next.js 14 (App Router)
+- Styling: Tailwind CSS 3
+- Package manager: npm
+- Deployment: Vercel
+
+## Project Structure (relevant parts)
 
 ```
 ├── app/
-│   ├── components/         # Reusable components
-│   │   ├── Navbar.tsx
-│   │   ├── Footer.tsx
-│   │   ├── ProjectCard.tsx
-│   │   └── SkillBadge.tsx
-│   ├── (pages)/            # Next.js app router pages
-│   │   ├── page.tsx        # Home page
-│   │   ├── about/
-│   │   │   └── page.tsx
-│   │   ├── projects/
-│   │   │   └── page.tsx
-│   │   └── contact/
-│   │       └── page.tsx
-│   ├── layout.tsx          # Root layout
-│   └── globals.css         # Global styles
-├── public/                 # Static assets
+│   ├── components/        # Reusable components (Navbar, Footer, ProjectCard, SkillBadge)
+│   ├── (pages)/           # App-router pages (home, about, projects, contact)
+│   ├── layout.tsx         # Root layout
+│   └── globals.css        # Global styles
+├── public/                # Static assets served at / (images, PDFs)
+│   ├── LinkedInPhoto.jpg
+│   ├── NextGenerationFocus.png
+│   ├── HVMATLPicture.jpg
+│   ├── IMG_6958.jpeg
+│   └── Resume-Phillip_Vu.pdf
 ├── package.json
 ├── tailwind.config.js
 ├── next.config.js
@@ -57,85 +69,49 @@ A modern, minimalist portfolio website for a full-stack developer. Built with Ne
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository
+
 ```bash
 git clone <repository-url>
 cd portfolio
 ```
 
-2. Install dependencies:
+2. Install dependencies
+
 ```bash
 npm install
 ```
 
-3. Run the development server:
+3. Run the development server
+
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+4. Open http://localhost:3000
 
 ## Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-
-## Customization
-
-### Update Personal Information
-
-Edit the content in each page:
-- [app/(pages)/page.tsx](app/%28pages%29/page.tsx) - Home page with name and tech stack
-- [app/(pages)/about/page.tsx](app/%28pages%29/about/page.tsx) - About page with bio and experience
-- [app/(pages)/projects/page.tsx](app/%28pages%29/projects/page.tsx) - Projects with details
-- [app/(pages)/contact/page.tsx](app/%28pages%29/contact/page.tsx) - Contact information
-
-### Add Project Screenshots
-
-1. Place images in the `public/` directory
-2. Update the `image` prop in ProjectCard components
-
-### Modify Styling
-
-Edit [tailwind.config.js](tailwind.config.js) to customize:
-- Colors
-- Fonts
-- Animations
-- Breakpoints
+- `npm run dev` — start dev server
+- `npm run build` — build for production
+- `npm run start` — run production server
+- `npm run lint` — run ESLint
 
 ## Deployment
 
-### Deploy to Vercel
+Deploy to Vercel by connecting your repository. Vercel auto-detects Next.js and sets sensible defaults.
 
-1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Click "Deploy"
+## Troubleshooting
 
-Vercel will automatically detect Next.js and configure the build settings.
-
-## Performance Optimization
-
-- ✓ Image optimization with Next.js
-- ✓ Automatic code splitting
-- ✓ Static generation where possible
-- ✓ CSS optimization with Tailwind
-- ✓ SEO-friendly metadata
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+- If images don't load, verify the file exists in `public/` and that you use an absolute path (e.g. `/LinkedInPhoto.jpg`).
+- Use `npm run build` to catch production-only issues.
 
 ## License
 
-This project is open source and available under the MIT License.
+MIT
 
 ## Contact
 
-- Email: contact@example.com
-- GitHub: [github.com](https://github.com)
-- LinkedIn: [linkedin.com](https://linkedin.com)
+- Email: phillipvu3635@gmail.com
+- GitHub: https://github.com/PVu23
+- LinkedIn: https://www.linkedin.com/in/phillip-vu-48520b352

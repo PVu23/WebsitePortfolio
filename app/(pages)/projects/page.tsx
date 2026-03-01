@@ -1,20 +1,20 @@
 
 import ProjectCard from '../../components/ProjectCard'
-import NGFPicture from '../../media/NextGenerationFocus.png'
-import HVMATLPicture from '../../media/HVMATLPicture.jpg'
+const NGFPicture = '/NextGenerationFocus.png'
+const HVMATLPicture = '/HVMATLPicture.jpg'
 
 const projects = [
   {
     id: 1,
-    title: 'Staff Dashboard',
-    description: 'Redesigned the staff dashboard and added ability to upload, store, and download files using MongoDB',
+    title: 'Project Manager: Georgia Gwinnett College and Next Generation Focus',
+    description: 'Redesigned the staff dashboard and added ability to upload, store, and download files using MongoDB. Role was Project Manager whose main responsibilities were to upkeep deadlines, facilitate communication between members, and assign roles to members. Used Jira to turn client requirements into user stories.',
     techStack: ['React.js', 'MongoDB', 'Jira', 'JavaScript', 'git', 'GitHub'],
     liveLink: 'https://nextgenerationfocus.org/',
     imgSrc: NGFPicture,
   },
   {
     id: 2,
-    title: 'Church Web Application',
+    title: 'Volunteer Programmer: Holy Vietnamese Martyr Church',
     description: 'Church web application for the Holy Vietnamese Martyrs Catholic Church in Atlanta. Shows upcoming events, mass times, people involved, and backstory on the founding of the church.',
     techStack: ['AWS', 'MongoDB', 'JavaScript', 'git', 'GitHub'],
     liveLink: 'https://www.hvmatl.org/',
